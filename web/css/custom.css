@@ -3,6 +3,7 @@ html,
    
 body{
     height: 100%;
+    max-width: 100%;
     background-image: url("1.png");
     background-repeat: no-repeat;
 background-size: 100% 720px;

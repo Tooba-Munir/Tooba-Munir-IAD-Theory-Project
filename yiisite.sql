@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2017 at 08:28 PM
+-- Generation Time: Jul 19, 2017 at 09:29 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -47,15 +47,16 @@ INSERT INTO `notes` (`notes_id`, `title`, `type`, `note`, `user_Id`, `date`) VAL
 (5, 'Quote By Baltasar Gracian.', 'Quotes', ' A wise man gets more use from his enemies than a fool from his friends.', 2, '15-Jul-2017'),
 (6, 'She dives into ocean.', 'Note', 'She dives into ocean to fly, to let dreams be carried away by waves and to let sorrow drown.', 7, '17-Jul-2017'),
 (7, 'Link for saving youtube videos.', 'Link', 'youmagictube.com', 7, '17-Jul-2017'),
-(8, 'Pirate bay website', 'Link', 'www.piratebay.com', 2, '18-Jul-2017'),
+(8, 'Pirate bay\'s website', 'Link', 'www.piratebay.com', 2, '19-Jul-2017'),
 (9, 'My yahoo e-mail', 'E-mail', 'toobamunir15@yahoo.com', 2, '19-Jul-2017'),
 (10, 'Stackover flow\' site', 'Link', 'https://stackoverflow.com/', 1, '19-Jul-2017'),
 (11, 'Friend\'s Contact', 'Contact', '0334-5643219', 5, '19-Jul-2017'),
 (12, 'Doctor\'s contact', 'Contact', '0324-7865432', 1, '19-Jul-2017'),
-(13, 'Everything has an end.', 'Note', 'Everything has an end, even the brightest star bursts into flames.', 1, '19-Jul-2017'),
+(13, 'Everything has an end.', 'Note', 'Everything has an end, even the brightest star bursts into flames.', 8, '19-Jul-2017'),
 (14, 'My gmail email', 'E-mail', 'alisyed200@gmail.com', 8, '19-Jul-2017'),
 (15, 'Inspirational Quote', 'Quotes', 'If you don\'t stick to your values when they are being tested, they\'re not values: they\'re hobbies-Jon Stewart', 5, '19-Jul-2017'),
-(16, 'Favourite', 'Quotes', 'It\'s kind of fun to do the impossible-Walt Disney.', 5, '19-Jul-2017');
+(16, 'Favourite', 'Quotes', 'It\'s kind of fun to do the impossible-Walt Disney.', 5, '19-Jul-2017'),
+(17, 'Rising above.', 'Quotes', 'Success is not just the crowning moment, the spiking of the ball in the end zone or the raising of the flag on the summit. It is the whole process of reaching for a goal and, sometimes, it begins with failure.', 5, '19-Jul-2017');
 
 -- --------------------------------------------------------
 
@@ -83,7 +84,8 @@ INSERT INTO `user` (`id`, `firstName`, `lastName`, `username`, `password`) VALUE
 (5, 'Alina', 'Khan', 'alinaKhan300', '123alina'),
 (6, 'John', 'Ruskin', 'johnRuskin', '909090'),
 (7, 'Farah', 'Hussain', 'farah234', '123456'),
-(8, 'Syed', 'Ali', 'syedAli100', '12Alisyed');
+(8, 'Syed', 'Ali', 'syedAli100', '12Alisyed'),
+(9, 'Shayan', 'Haider', 'shayanhaider100', '123456');
 
 --
 -- Indexes for dumped tables
@@ -111,12 +113,12 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `notes`
 --
 ALTER TABLE `notes`
-  MODIFY `notes_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `notes_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- Constraints for dumped tables
 --
