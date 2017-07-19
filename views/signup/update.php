@@ -1,21 +1,24 @@
 <?php
 
 use yii\helpers\Html;
+$this->context->layout='noteslayout';
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Signup */
 
-$this->title = 'Update Signup: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Signups', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Update Account ';
+
+
 ?>
 <div class="signup-update">
+<div class="col-lg-5">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+            <h3><strong><i><?= Html::encode($this->title) ?></i></strong></h3>
+
 
     <?= $this->render('_form', [
         'model' => $model,
     ]) ?>
+
+</div>
+<img src="<?= Yii::$app->request->baseUrl ?>/create.png" alt="Create" style="width:250px;height:250px; margin-left: 350px; margin-top: 300px;"></img>
 
 </div>

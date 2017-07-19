@@ -3,34 +3,32 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 
-/* @var $this yii\web\View */
-/* @var $searchModel app\models\SignupSearch */
-/* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Signups';
-$this->params['breadcrumbs'][] = $this->title;
+$this->context->layout='noteslayout';
+
+$this->title = 'My Account';
 ?>
 <div class="signup-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+        <h3><strong><i><?= Html::encode($this->title) ?></i></strong></h3>
+
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('Create Signup', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            
             'firstName',
             'lastName',
             'username',
             'password',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn','template' => '{update}',],
+
         ],
     ]); ?>
 </div>

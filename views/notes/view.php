@@ -4,19 +4,15 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 $this->context->layout='noteslayout';
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Notes */
 
 $this->title = $model->title;
-//$this->params['breadcrumbs'][] = ['label' => 'My Notes', 'url' => ['index']];
-//$this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="notes-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Update', ['update', 'id' => $model->notes_id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a('Update', ['update', 'id' => $model->notes_id], ['class' => 'btnstartupdate']) ?>
         <?= Html::a('Delete', ['delete', 'id' => $model->notes_id], [
             'class' => 'btn btn-danger',
             'data' => [
@@ -29,7 +25,7 @@ $this->title = $model->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'notes_id',
+        
             'title',
             'type',
             'note',

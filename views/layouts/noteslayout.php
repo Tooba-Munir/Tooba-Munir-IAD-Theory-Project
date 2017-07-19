@@ -39,6 +39,8 @@ AppAsset::register($this);
         'items' => [
                         ['label' => 'Add Notes', 'url' => ['/notes/create']],
                         ['label' => 'My Notes', 'url' => ['/notes/index']],
+                        ['label' => 'My Account', 'url' => ['/signup/index']],
+
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (

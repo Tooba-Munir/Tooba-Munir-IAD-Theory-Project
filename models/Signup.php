@@ -4,28 +4,16 @@ namespace app\models;
 
 use Yii;
 
-/**
- * This is the model class for table "user".
- *
- * @property integer $id
- * @property string $firstName
- * @property string $lastName
- * @property string $username
- * @property string $password
- */
+
 class Signup extends \yii\db\ActiveRecord
 {
-    /**
-     * @inheritdoc
-     */
+    
     public static function tableName()
     {
         return 'user';
     }
 
-    /**
-     * @inheritdoc
-     */
+    
     public function rules()
     {
         return [
@@ -35,9 +23,7 @@ class Signup extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
+    
     public function attributeLabels()
     {
         return [

@@ -3,9 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 $this->title = 'Notes';
-/* @var $this yii\web\View */
-/* @var $model app\models\Notes */
-/* @var $form ActiveForm */
+
 ?>
 <div class="notes">
 <div class="col-lg-5">

@@ -1,6 +1,6 @@
 <?php
 
-/* @var $this yii\web\View */
+
 
 $this->title = 'Notes Keeper';
 ?>
@@ -15,7 +15,7 @@ $this->title = 'Notes Keeper';
 body{
     height: 100%;
 max-width: 100%;
-    background-image: url("8.png");
+    background-image: url("notebg.png");
     background-repeat: no-repeat;
 background-size: 100% 720px;
 

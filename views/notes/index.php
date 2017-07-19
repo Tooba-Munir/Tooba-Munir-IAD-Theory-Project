@@ -4,9 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 $this->context->layout='noteslayout';
 
-/* @var $this yii\web\View */
-/* @var $searchModel app\models\NotesSearch */
-/* @var $dataProvider yii\data\ActiveDataProvider */
+
 
 $this->title = 'My Notes';
 ?>
@@ -17,7 +15,7 @@ $this->title = 'My Notes';
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('Create Notes', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Notes', ['create'], ['class' => 'btnstart']) ?>
     </p>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,

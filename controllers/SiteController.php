@@ -9,13 +9,9 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\Notes;
 use app\models\Signup;
-use app\models\Users;
-use app\models\QUser;
 class SiteController extends Controller
 {
-    /**
-     * @inheritdoc
-     */
+    
     public function behaviors()
     {
         return [
@@ -39,9 +35,7 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
+    
     public function actions()
     {
         return [
@@ -55,11 +49,7 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * Displays homepage.
-     *
-     * @return string
-     */
+    
     public function actionIndex()
     {
         return $this->render('index');
@@ -70,11 +60,7 @@ class SiteController extends Controller
 
     
 
-    /**
-     * Login action.
-     *
-     * @return string
-     */
+    
     public function actionLogin()
     {
         if (!Yii::$app->user->isGuest) {
@@ -91,11 +77,7 @@ return $this->redirect(['/notes/create']);
         ]);
     }
 
-    /**
-     * Logout action.
-     *
-     * @return string
-     */
+   
     public function actionLogout()
     {
         Yii::$app->user->logout();
@@ -103,18 +85,7 @@ return $this->redirect(['/notes/create']);
         return $this->goHome();
     }
 
-    /**
-     * Displays contact page.
-     *
-     * @return string
-     */
-    
-
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
+   
     public function actionAbout()
     {
         return $this->render('about');
@@ -128,7 +99,7 @@ public function actionNotes()
 
     if ($model->load(Yii::$app->request->post())) {
         if ($model->validate()) {
-            // form inputs are valid, do something here
+        
             return;
         }
     }
@@ -146,7 +117,7 @@ public function actionSignup()
 
     if ($model->load(Yii::$app->request->post())) {
         if ($model->validate()) {
-            // form inputs are valid, do something here
+            
             return;
         }
     }
@@ -177,17 +148,6 @@ public function actionUsers()
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
 
 }
 

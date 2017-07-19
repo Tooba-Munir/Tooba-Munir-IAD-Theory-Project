@@ -3,9 +3,7 @@
 use yii\helpers\Html;
 $this->title = 'Create Account';
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Signup */
-//$this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="signup-create">
 <img src="<?= Yii::$app->request->baseUrl ?>/addUser.png" alt="addUser" style="width:250px;height:250px; margin-left: 350px; margin-top: 300px;"></img>

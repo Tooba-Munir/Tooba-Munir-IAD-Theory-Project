@@ -3,13 +3,8 @@
 use yii\helpers\Html;
 $this->context->layout='noteslayout';
 
-/* @var $this yii\web\View */
-/* @var $model app\models\Notes */
 
-$this->title = 'Update';
-//$this->params['breadcrumbs'][] = ['label' => 'My Notes', 'url' => ['index']];
-//$this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->notes_id]];
-//$this->params['breadcrumbs'][] = 'Update';
+$this->title = 'Update Notes';
 ?>
 <div class="notes-update">
 <div class="col-lg-5">
@@ -19,4 +14,6 @@ $this->title = 'Update';
         'model' => $model,
     ]) ?>
 </div>
+<img src="<?= Yii::$app->request->baseUrl ?>/create.png" alt="Create" style="width:250px;height:250px; margin-left: 350px; margin-top: 300px;"></img>
+
 </div>

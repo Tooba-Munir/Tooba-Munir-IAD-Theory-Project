@@ -4,31 +4,16 @@ namespace app\models;
 
 use Yii;
 
-/**
- * This is the model class for table "notes".
- *
- * @property integer $notes_id
- * @property string $title
- * @property string $type
- * @property string $note
- * @property integer $user_Id
- * @property string $date
- *
- * @property User $user
- */
+
 class Notes extends \yii\db\ActiveRecord
 {
-    /**
-     * @inheritdoc
-     */
+   
     public static function tableName()
     {
         return 'notes';
     }
 
-    /**
-     * @inheritdoc
-     */
+    
     public function rules()
     {
         return [
@@ -40,9 +25,7 @@ class Notes extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @inheritdoc
-     */
+    
     public function attributeLabels()
     {
         return [
@@ -55,9 +38,7 @@ class Notes extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
+    
     public function getUser()
     {
         return $this->hasOne(BackendUser::className(), ['id' => 'user_Id']);
