@@ -202,18 +202,29 @@ color: #FFF;
 
 }
 .btnstart{
-    padding: 10px 20px;
+    padding: 10px 25px;
     color: #fff;
     border-radius: 4px;
-    border: none;
-    background-color: #2ECC71;
-    border-bottom: 4px solid #27AE60;
-    margin-top: 10px;
+    background-color: rgb(12,12,12);
+    border-bottom: 4px solid rgb(0,0,0);
+    display: inline-block;
+    text-decoration: none;
+
 }
-.btnstart:hover {background-color: #3e8e41}
+
+.btnstart:hover{
+    background-color: rgb(35,35,35);
+    
+    color: #fff;
+    text-decoration: none;
+     transition-duration: 0.4s;
+    cursor: pointer;
+    
+
+}
 
 .btnstart:active {
-  background-color: #3e8e41;
-  border-bottom: 4px solid #27AE60;
+  background-color: rgb(12,12,12);
+  border-bottom: 4px solid  rgb(0,0,0);
   transform: translateY(4px);
 }

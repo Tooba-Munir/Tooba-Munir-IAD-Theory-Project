@@ -43,6 +43,8 @@ $this->title = 'Login';
 				 
 
     <?php ActiveForm::end(); ?>
+    <img src="<?= Yii::$app->request->baseUrl ?>/loginUser.png" alt="loginUser" style="width:300px;height:300px; margin-left: 800px; margin-top: -50px;"></img>
+
      </div>
      </div>
      

@@ -209,11 +209,18 @@ color: #FFF;
     border-bottom: 4px solid rgb(0,0,0);
     display: inline-block;
     text-decoration: none;
+
 }
-.btnstart:hover {
+
+.btnstart:hover  {
     background-color: rgb(35,35,35);
-    text-decoration: none;
+    
     color: #fff;
+    text-decoration: none;
+     transition-duration: 0.4s;
+    cursor: pointer;
+    
+
 }
 
 .btnstart:active {
