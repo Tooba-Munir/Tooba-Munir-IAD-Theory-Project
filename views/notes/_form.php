@@ -17,11 +17,11 @@ $session=Yii::$app->user->id;
 
     <?= $form->field($model, 'type')->dropDownList(['Note' => 'Note', 'Link' => 'Link', 'Quotes' => 'Quotes','E-mail'=>'E-mail','Contact'=>'Contact']); ?>
 
-    <?= $form->field($model, 'note')->textarea(['rows' => 5.5]) ?>
+    <?= $form->field($model, 'note')->textarea(['rows' => 8]) ?>
 
-    <?= $form->field($model, 'user_Id')->textInput(['readonly'=> true,'value'=>  $session]) ?>
+    <?= $form->field($model, 'user_Id')->textInput(['readonly'=> true,'type'=>'hidden','value'=>  $session])->label(false); ?>
 
-    <?= $form->field($model, 'date')->textInput(['readonly' => true, 'value' => date('d-M-Y')]) ?>
+    <?= $form->field($model, 'date')->textInput(['readonly' => true,'type'=>'hidden', 'value' => date('d-M-Y')])->label(false); ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btnstart' : 'btnstart']) ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2017 at 09:29 PM
+-- Generation Time: Jul 20, 2017 at 05:51 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -42,7 +42,7 @@ CREATE TABLE `notes` (
 INSERT INTO `notes` (`notes_id`, `title`, `type`, `note`, `user_Id`, `date`) VALUES
 (1, 'Online Shopping website', 'Link', 'www.daraz.pk', 1, '15-Jul-2017'),
 (2, 'University of Karachi\'s website', 'Link', 'www.uok.edu.pk', 1, '15-Jul-2017'),
-(3, 'HP support\'s link', 'Link', 'https://support.hp.com', 2, '19-Jul-2017'),
+(3, 'HP support\' link', 'Link', 'https://support.hp.com', 2, '20-Jul-2017'),
 (4, 'Favourite Quote', 'Quotes', '\" You can do anything, but not everything.\"\r\n—David Allen', 3, '15-Jul-2017'),
 (5, 'Quote By Baltasar Gracian.', 'Quotes', ' A wise man gets more use from his enemies than a fool from his friends.', 2, '15-Jul-2017'),
 (6, 'She dives into ocean.', 'Note', 'She dives into ocean to fly, to let dreams be carried away by waves and to let sorrow drown.', 7, '17-Jul-2017'),
@@ -56,7 +56,9 @@ INSERT INTO `notes` (`notes_id`, `title`, `type`, `note`, `user_Id`, `date`) VAL
 (14, 'My gmail email', 'E-mail', 'alisyed200@gmail.com', 8, '19-Jul-2017'),
 (15, 'Inspirational Quote', 'Quotes', 'If you don\'t stick to your values when they are being tested, they\'re not values: they\'re hobbies-Jon Stewart', 5, '19-Jul-2017'),
 (16, 'Favourite', 'Quotes', 'It\'s kind of fun to do the impossible-Walt Disney.', 5, '19-Jul-2017'),
-(17, 'Rising above.', 'Quotes', 'Success is not just the crowning moment, the spiking of the ball in the end zone or the raising of the flag on the summit. It is the whole process of reaching for a goal and, sometimes, it begins with failure.', 5, '19-Jul-2017');
+(17, 'Rising above.', 'Quotes', 'Success is not just the crowning moment, the spiking of the ball in the end zone or the raising of the flag on the summit. It is the whole process of reaching for a goal and, sometimes, it begins with failure.', 5, '19-Jul-2017'),
+(18, 'Favourite Quote', 'Quotes', 'You can do anything, but not everything.', 8, '20-Jul-2017'),
+(20, 'Life consists not in holding good.', 'Note', 'Life consists not in holding good cards but in playing those you hold well.', 1, '20-Jul-2017');
 
 -- --------------------------------------------------------
 
@@ -78,7 +80,7 @@ CREATE TABLE `user` (
 
 INSERT INTO `user` (`id`, `firstName`, `lastName`, `username`, `password`) VALUES
 (1, 'john', 'daves', 'johnDaves', '123'),
-(2, 'Tooba', 'Munir', 'ToobaMunir', 'abc123'),
+(2, 'Tooba', 'Munir', 'ToobaMunir', 'abc123456'),
 (3, 'Sarah', 'Ali', 'sarahAli200', 'sara123456'),
 (4, 'Shahid', 'Ali', 'shah012', 'alpha123'),
 (5, 'Alina', 'Khan', 'alinaKhan300', '123alina'),
@@ -113,7 +115,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `notes`
 --
 ALTER TABLE `notes`
-  MODIFY `notes_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `notes_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 --
 -- AUTO_INCREMENT for table `user`
 --

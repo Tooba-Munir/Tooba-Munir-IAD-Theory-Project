@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+use yii\widgets\ListView;
 
 
 $this->context->layout='noteslayout';
@@ -15,20 +15,9 @@ $this->title = 'My Account';
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     
-    <?= GridView::widget([
+    <?= ListView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            
-            'firstName',
-            'lastName',
-            'username',
-            'password',
-
-            ['class' => 'yii\grid\ActionColumn','template' => '{update}',],
-
-        ],
+        'itemView'=>'viewaccount',
+       
     ]); ?>
 </div>

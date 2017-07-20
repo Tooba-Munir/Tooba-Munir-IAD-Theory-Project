@@ -1,7 +1,7 @@
 <?php
 
 use yii\helpers\Html;
-use yii\grid\GridView;
+use yii\widgets\ListView;
 $this->context->layout='noteslayout';
 
 
@@ -14,23 +14,12 @@ $this->title = 'My Notes';
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('Create Notes', ['create'], ['class' => 'btnstart']) ?>
-    </p>
-    <?= GridView::widget([
+   
+    <?= ListView::widget([
         'dataProvider' => $dataProvider,
-        'filterModel' => $searchModel,
-        'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            
-            'title',
-            'type',
-            'note',
-            
-             'date',
-
-            ['class' => 'yii\grid\ActionColumn'],
-        ],
+    
+        'itemView'=>'viewnotes',
+        
+    
     ]); ?>
 </div>
